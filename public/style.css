@@ -1,0 +1,75 @@
+
+:root {
+  --primary: #ffe600;
+  --accent: #ffe600;
+  --bg: #eeeeee;
+  --text: #333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ─── HEADER ─── */
+header {
+  background-color: var(--primary);
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: rgb(9, 9, 9);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.hero-card {
+  background-color: var(--accent);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 600px;
+  border: 2px solid var(--primary);
+}
+
+.hero-card p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0;
+}
+
+
+footer {
+  background-color: var(--primary);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}

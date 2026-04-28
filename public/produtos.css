@@ -1,0 +1,111 @@
+:root {
+  --primary: #000000;
+  --success: #27ae60;
+  --danger: #c0392b;
+  --bg: #eeeeee;
+  --text: #333;
+  --yellow: #ffed00;
+}
+
+/* 1. RESET E BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0; /* Removido o padding para o header encostar nas bordas */
+  line-height: 1.6;
+}
+
+/* 2. ESTILIZANDO O NAV (que está no topo do HTML) */
+nav {
+  background-color: var(--yellow);
+  padding: 20px 50px;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: flex-end; /* Alinha os links à direita */
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 3. HEADER (Título do Sistema) */
+header {
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.container-header h1 {
+  font-size: 2.5rem;
+  border-bottom: none; /* Removendo borda padrão do seu CSS antigo */
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-weight: bold;
+}
+
+/* 4. CONTAINER PRINCIPAL (Amarelo) */
+.container {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  background: var(--yellow);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 2px solid #000;
+}
+
+h1, h2 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* 5. FORMULÁRIO */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* 6. BOTÕES */
+.form-buttons, .list-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
